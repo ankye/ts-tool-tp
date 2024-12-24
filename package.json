@@ -1,0 +1,46 @@
+{
+code.soulapp-inc.cn ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINyQtIl/efhn2Mze609sLIRmdYLKXpC535dZHHhcve+G
+    "name": "ts-tool-tp",
+    "version": "1.0.0",
+    "description": "``` cocos plugin tool npm install npm run build",
+    "main": "index.ts",
+    "type": "module",
+    "bin": {
+        "cpt": "bin/index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "node_modules/gulp/bin/gulp.js --gulpfile gulpfile.js build",
+        "start": "node bin/index.js",
+        "start:dev": "cross-env NODE_ENV=dev nodemon"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^22.10.2",
+        "@typescript-eslint/eslint-plugin": "^8.18.2",
+        "@typescript-eslint/parser": "^8.18.2",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.57.1",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-typescript-enum": "^2.1.0",
+        "gulp": "^5.0.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-inject-string": "^1.1.2",
+        "gulp-minify": "^3.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-typescript": "^6.0.0-alpha.1",
+        "gulp-uglify": "^3.0.2",
+        "nodemon": "^3.1.9",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.2"
+    },
+    "dependencies": {
+        "@types/jszip": "^3.4.0",
+        "canvas": "^3.0.0",
+        "fs-extra": "^11.2.0",
+        "jszip": "^3.10.1",
+        "marked": "^14.1.4",
+        "marked-terminal": "^7.2.1"
+    }
+}
